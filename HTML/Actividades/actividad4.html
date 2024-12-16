@@ -1,0 +1,53 @@
+<form>
+    <fieldset>
+        <legend>INFORMACIÓN PERSONAL</legend>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" required><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input id="apellidos" type="text" required><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+
+        <label for="Género">Género:</label>
+        <select id="Género">
+            <option value="value1">Hombre</option required><br>
+            <option value="value2">Mujer</option required><br>
+            <option value="value3">Otro</option required><br>
+        </select><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>INFORMACIÓN DEL CONTACTO</legend>
+        <label for="email">Dirección de Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required><br>
+
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" required><br>
+
+        <label for="direccion">Dirección:</label>
+        <input id="direccion"><Direccion type="text" required><br>
+    </fieldset>
+    <fieldset>
+        <legend>INFORMACIÓN DE LA CUENTA</legend>
+        <label for="Nombre de Usuario">Nombre de Usuario  </label>
+        <input type="Nombre" id="Nombre" name="Nombre" placeholder="Ingresa tu nombre de usuario" required><br>
+
+        <label for="Contraseña">Contraseña:</label>
+        <input type="Password" id="Contraseña" name="Contraseña" placeholder="Ingresa tu Contraseña" required><br>
+
+        <label for="Contraseña">Confirmación de Contraseña</label>
+        <input type="Password" id="Confirmación de Contraseña" name="Confirmación de Contraseña" placeholder="Confirma tu Contraseña" required><br>
+    </fieldset>
+    <fieldset>
+        <legend>PREFERENCIAS</legend>
+        <label for="Seleccionar un Color Favorito">Color Favorito</label>
+        <input id="Color Favorito" type="color"><br>
+
+        <label for="Aceptar términos y condiciones">Aceptar términos y condiciones</label>
+        <input id="términos" type="checkbox" required><br>
+    </fieldset>
+</form>
+
+<form action="/submit" method="POST">
+    <input type="submit" value="Enviar">
