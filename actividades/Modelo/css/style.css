@@ -1,7 +1,7 @@
 /* Variables globales */
 :root{
    --backgroundColor: red;
-   --widthButton:7rem;
+   --widthButton:20rem;
    --widthImg:25%;
    --widthImgCarrousel:30%;
    --fontFamily:"Montserrat", serif;
@@ -99,3 +99,4 @@
     text-align: center;
     margin: 2rem;
 }
+
