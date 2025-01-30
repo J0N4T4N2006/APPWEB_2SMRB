@@ -17,11 +17,23 @@ console.log(document.getElementsByClassName("header__btn")); // Me devuelve un a
 /* EJ2: Vamos a aprender a cambiar las propiedades css de nuestro objeto (estilos)*/
 function cambiar(){
 
+    /* EJ1*/
     let titulo = document.querySelector("h1");
+    const contenido = titulo.textContent;
     console.log(titulo.textContent) // Visualizo el contenido de nuestro objetivo
-    titulo.textContent = "Hola mundo con JavaScript"; // Modifico el valor del objeto
-    console.log(titulo.innerHTML); // Accedo al contenido del objeto 
-    titulo.innerHTML = "<em> Hola mundo <em>"; // Admite e interpreta los elementos
+    if(contenido == "Hola mundo con JavaScript"){
+
+    }else{
+        titulo.textContent = "Hola mundo con JavaScript";
+    }
+
+    /* EJ2*/
+    titulo.style.color = "red";
+    titulo.style.textAlign = "center";
+    titulo.style.backgroundColor = "yellow";
+
+    /* Otra forma de hacerlo: creo una clase en css con las propiedades y añadir esta clase a nuestro objeto*/
+    titulo.classList.toggle("main__title--change");
 
 }
 

@@ -73,7 +73,7 @@
 
 /*Etiquetas js*/
 .main__title--change{
-    color: red;
+    color: var(--backgroundColor);
     text-align: center;
 }
 
@@ -95,7 +95,7 @@
 
 .texto{
     color : white;
-    background-color: red;
+    background-color: var(--backgroundColor);
     text-align: center;
     margin: 2rem;
 }
