@@ -67,9 +67,5 @@ btn_tit.addEventListener("Click", function(){
 function borrar(){
     const ele_sel =document.querySelector("div");
     console.log(ele_sel);
-    if(ele_sel){
-        
-    }
-
 
 }
