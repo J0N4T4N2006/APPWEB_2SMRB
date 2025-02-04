@@ -63,16 +63,19 @@ function crearDiv(){
         // Posicionamos nuestro elemento detras de la etiqueta h1
         const titulo = document.querySelector("h1"); // elemento de referencia
         titulo.parentNode.insertBefore(new_ele, titulo.nextSibling)
-    }
+    }   
 
-    //EJ4: Vamos a aprender a borrar elementos de nuestro html de manera dinámica
-    function borrar(){
+}
 
-        const ele_sel = document.querySelector("div"); // Seleccionamos el elemento a eliminar
+ //EJ4: Vamos a aprender a borrar elementos de nuestro html de manera dinámica
+ function borrar(){
+
+    const ele_sel = document.querySelector("div"); // Seleccionamos el elemento a eliminar
+
+    if(ele_sel){
         ele_sel.remove(); // Eliminamos el elemento de nuestro documento
-
     }
-   
+    
 
 }
 
@@ -82,6 +85,7 @@ function crearDiv(){
 /* Para trabajar con eventos, vamos a utilizar la funcion addEventListener*/
 const btn_tit = document.querySelector(".header__btn--change");
 const btn_blq = document.querySelector(".header__btn--create");
+const btn_rem = document.querySelector(".header__btn--remove");
 
 btn_tit.addEventListener("click", function(){
     /* Cambiar el contenido y la apariencia (css) de mi etiqueta*/
@@ -94,6 +98,20 @@ btn_blq.addEventListener("click", function(){
     /* Creamos un nuevo objeto div con propiedades y contenido especifico */
     crearDiv();
     /* Cambiar la apariencia de mi boton*/
+    if(btn_rem.classList.contains("header__btn--click")){
+        btn_rem.classList.remove("header__btn--click");
+    }
     this.classList.toggle("header__btn--click");
 });
+
+btn_rem.addEventListener("click",function(){
+    borrar();
+    /* Cambiar la apariencia de mi boton*/
+    if(btn_blq.classList.contains("header__btn--click")){
+        btn_blq.classList.remove("header__btn--click");
+    }
+    this.classList.toggle("header__btn--click");
+});
+
+
 
