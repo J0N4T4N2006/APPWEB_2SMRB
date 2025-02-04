@@ -37,11 +37,39 @@ function cambiar(){
 
 }
 
+/* EJ3: Crear nuevos elementos y objetos dentro de mi html*/
+function crearDiv(){
+
+    const new_ele = document.createElement("div");
+    new_ele.textContent = "JavaScript permite crear páginas dinámicas.";
+    new_ele.classList.add("texto");
+
+    // Posiciono mi elemento detras del ultimo hijo de mi etiqueta padre
+    // const padre = document.querySelector("main");
+    // padre.appendChild(new_ele);
+
+    // Posiciono mi elemento detras de la etiqueta titulo
+    const titulo = document.querySelector("h1"); // Elemento de referencia
+    titulo.parentNode.insertBefore(new_ele, titulo.nextSibling)
+
+}
+
 /* Para trabajar con eventos, vamos a utilizar la funcion add.EvenListener*/
 const btn_tit = document.querySelector(".header__btn--change");
 
 btn_tit.addEventListener("Click", function(){
 
     cambiar();
-
+    this.classList.toggle("header__btn--click");
 });
+
+/*E4*/
+function borrar(){
+    const ele_sel =document.querySelector("div");
+    console.log(ele_sel);
+    if(ele_sel){
+        
+    }
+
+
+}
