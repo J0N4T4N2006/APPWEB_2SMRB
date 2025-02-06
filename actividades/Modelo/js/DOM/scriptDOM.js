@@ -69,3 +69,21 @@ function borrar(){
     console.log(ele_sel);
 
 }
+
+/*E6*/
+function fuentesImgs(){
+    const imgs = document.querySelectorAll("img");
+   imgs.forEach(imagen =>{
+        txt += imagen.src;
+   });
+
+   const new_ele = document.createElement("p");
+   new_ele.textContent = txt;
+   const padre = document.querySelectorAll
+
+   btn_fnt.addEventListener("click", function(){
+        fuentesImgs();
+        this.classList.toggle("header__btn--font")
+
+    });
+}

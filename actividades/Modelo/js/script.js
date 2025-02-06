@@ -102,6 +102,7 @@ const btn_img = document.querySelector(".main__carrusel__img");
 const btn_menu = document.querySelector(".header__btn--open");
 const imgs = document.querySelectorAll(".main__sub__fig__img");
 const btns = document.querySelectorAll(".header__btn");
+const btn_fnt = document.querySelectorAll(".header__btn--font")
 
 
 /*Eventos*/
