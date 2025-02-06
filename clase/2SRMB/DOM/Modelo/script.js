@@ -119,6 +119,12 @@ function Carrusel_img(){
     }
 }
 
+function OcultaBotones(){
+    const btns = document.querySelectorAll(".header__btn");
+    const btn_opn = document.querySelector(".header__botones__btn");
+    btns.forEach.apply(btn =>)
+}
+
 /*---------------------- Eventos y parte principal del codigo ---------------*/
 
 /* Para trabajar con eventos, vamos a utilizar la funcion addEventListener*/
@@ -128,6 +134,7 @@ const btn_rem = document.querySelector(".header__btn--remove");
 const imgs = document.querySelectorAll(".main__sub__fig__img");
 const btn_fnt = document.querySelector(".header__btn--font");
 const btn_car = document.querySelector(".main_carrusel_img");
+const btn_opn = document.addEventListener("click", function());
 
 btn_tit.addEventListener("click", function(){
     /* Cambiar el contenido y la apariencia (css) de mi etiqueta*/
