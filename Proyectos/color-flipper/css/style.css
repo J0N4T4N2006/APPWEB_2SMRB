@@ -1,0 +1,85 @@
+:root {
+    --header-bg: #FEFCFD;
+    --text-primary: #07BEB8;
+    --btn-text: antiquewhite;
+    --btn-bg: black;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    text-align: center;
+    margin: 0;
+}
+
+.header {
+    background-color: var(--header-bg);
+    width: 100%;
+    height: 100%;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.header__title {
+    color: #07BEB8;
+    text-align: left;
+    margin: 0;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: medium;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+.nav__link {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.main {
+    margin-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__color-change {
+    color: teal;
+}
+
+.main__color-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: antiquewhite;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: black;
+    width: fit-content;
+    text-align: center;
+}
+
+.main__button {
+    color: antiquewhite;
+    font-size: 1rem;
+    padding: 1rem 5rem;
+    border-color: black;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 7%;
+    background-color: transparent;
+}
+
+.main__color-name {
+    color: teal;
+}
+
+
