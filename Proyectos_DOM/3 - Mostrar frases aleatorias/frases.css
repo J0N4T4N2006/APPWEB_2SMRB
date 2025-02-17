@@ -1,0 +1,37 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    background-color: white;
+}
+
+#contenedor_frase {
+    font-size: 1.5em;
+    margin-bottom: -6rem;
+    text-align: center;
+    padding: 7rem;
+    border: 1rem solid #e8e8e8;
+    background-color: #e8e8e8;
+    border-radius: 1rem;
+    box-shadow: 5rem black;
+    color: black;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1em;
+    border: none;
+    background-color: rgb(71, 0, 203);
+    color: white;
+    border-radius: 0.5rem;
+    font: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(71, 0, 203);
+}
+
