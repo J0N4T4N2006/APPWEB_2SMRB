@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; 
+    margin: 0; 
+}
+
+.caja {
+    width: 20rem;
+    height: 20rem;
+    background-color: blue;
+    display: block;
+}
+
+.boton {
+    background-color: green;
+    width: 8rem;
+    height: 3rem;
+    padding: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+    margin-top: 1.5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; 
+}
+
